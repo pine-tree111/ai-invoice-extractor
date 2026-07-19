@@ -1,6 +1,6 @@
 import os
 from pydantic import BaseModel, Field
-from typing import Optional
+from typing import Optional, Literal
 from openai import OpenAI
 from dotenv import load_dotenv
 
@@ -16,7 +16,7 @@ class InvoiceData(BaseModel):
     subtotal: Optional[float] = Field(None, description="Amount before tax")
     tax_amount: Optional[float] = Field(None, description="Total tax amount applied")
     total_amount: Optional[float] = Field(None, description="Final total amount including tax")
-    currency: Optional[str] = Field(None, description="MUST be a strict 3-letter ISO currency code (e.g. USD, GBP). NEVER use symbols like $ or £.")
+    currency: Optional[Literal["USD", "EUR", "GBP", "CAD", "AUD"]] = Field(None, description="3-letter currency code")
 
 def extract_invoice_data(raw_text: str) -> InvoiceData:
     """
