@@ -1,0 +1,6 @@
+streamlit
+pdfplumber
+openai>=1.40.0
+pydantic
+python-dotenv
+pandas
