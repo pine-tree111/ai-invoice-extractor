@@ -16,7 +16,7 @@ class InvoiceData(BaseModel):
     subtotal: Optional[float] = Field(None, description="Amount before tax")
     tax_amount: Optional[float] = Field(None, description="Total tax amount applied")
     total_amount: Optional[float] = Field(None, description="Final total amount including tax")
-    currency: Optional[str] = Field(None, description="3-letter currency code (e.g. USD, GBP)")
+    currency: Optional[str] = Field(None, description="MUST be a strict 3-letter ISO currency code (e.g. USD, GBP). NEVER use symbols like $ or £.")
 
 def extract_invoice_data(raw_text: str) -> InvoiceData:
     """
