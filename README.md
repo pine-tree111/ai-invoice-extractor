@@ -25,8 +25,8 @@ extractor/
 ## 💻 How to Run Locally
 
 1. Clone the repository
-2. Create a virtual environment: `python3 -m venv venv`
-3. Activate the environment: `source venv/bin/activate`
+2. Create a virtual environment: `python3 -m venv .venv`
+3. Activate the environment: `source .venv/bin/activate`
 4. Install dependencies: `pip install -r requirements.txt`
 5. Add your OpenRouter API key to a `.env` file (`OPENROUTER_API_KEY=your_key`)
 6. Run the app: `streamlit run app.py`

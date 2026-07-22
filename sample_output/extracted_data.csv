@@ -1,5 +1,5 @@
 Filename,Supplier,Date,Subtotal,Tax,Total,Currency,Status,Warnings
-invoice_Aaron Bergman_36258.pdf,SuperStore,Mar 06 2012,48.71,,50.1,$,approved,None
-invoice_Aaron Bergman_36259.pdf,SuperStore,Mar 06 2012,53.82,,58.11,$,approved,None
-invoice_Aaron Hawkins_36652.pdf,SuperStore,May 12 2012,16.0,,17.15,$,approved,None
-invoice_Aaron Hawkins_37425.pdf,SuperStore,Oct 24 2012,197.63,,160.94,$,approved,None
+invoice_Aaron Bergman_36258.pdf,SuperStore,Mar 06 2012,48.71,,50.1,USD,approved,None
+invoice_Aaron Bergman_36259.pdf,SuperStore,Mar 06 2012,53.82,,58.11,USD,approved,None
+invoice_Aaron Hawkins_36652.pdf,SuperStore,May 12 2012,16.0,,17.15,USD,approved,None
+invoice_Aaron Hawkins_37425.pdf,SuperStore,Oct 24 2012,197.63,,160.94,USD,approved,None
